@@ -4,7 +4,10 @@
   "description": "1. 安装koa npm i koa -S",
   "main": "index.js",
   "dependencies": {
-    "koa": "^2.5.3"
+    "ejs": "^2.6.1",
+    "koa": "^2.5.3",
+    "koa-views": "^6.1.4",
+    "pug": "^2.0.3"
   },
   "devDependencies": {},
   "scripts": {
