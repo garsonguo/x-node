@@ -1,0 +1,16 @@
+{
+  "name": "x-node",
+  "version": "1.0.0",
+  "description": "1. 安装koa npm i koa -S",
+  "main": "index.js",
+  "dependencies": {
+    "koa": "^2.5.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node server/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
