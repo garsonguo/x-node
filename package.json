@@ -6,12 +6,26 @@
   "dependencies": {
     "ejs": "^2.6.1",
     "koa": "^2.5.3",
+    "koa-body": "^4.0.4",
+    "koa-router": "^7.4.0",
+    "koa-static2": "^0.1.8",
     "koa-views": "^6.1.4",
-    "pug": "^2.0.3"
+    "koa2-cors": "^2.0.6",
+    "pug": "^2.0.3",
+    "puppeteer": "^1.9.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.4",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-0": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "require-directory": "^2.1.1"
+  },
   "scripts": {
-    "start": "node server/index.js",
+    "start": "node start.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
