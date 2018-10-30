@@ -3,6 +3,7 @@ const low = require('lowdb')
 const FileSync = require('lowdb/adapters/FileSync')
 
 const dbPath = path.resolve(__dirname, '../db/db.json')
+const lodashId = require('lodash-id')
 
 const adapter = new FileSync(dbPath)
 
@@ -13,6 +14,7 @@ module.exports = {
         return new Promise((resolve, reject) => {
             if (instance === undefined) {
                 const db = low(adapter)
+                db._.mixin(lodashId)
                 instance = db
                 const hasDB = db.has(context).value()
                 if (hasDB) {

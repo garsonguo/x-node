@@ -9,5 +9,11 @@ module.exports = {
             password: pwd
         }).value()
         return user
+    },
+    registeredUser: async (user) => {
+        const context = 'user'
+        let db = await model.init(context)
+        let userInfo = db.insert(user).write()
+        return userInfo
     }
 }
