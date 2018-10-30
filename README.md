@@ -20,4 +20,6 @@
     + 用法：https://www.npmjs.com/package/require-directory
 8. 在vscode下调试koa代码 
     + 用法：https://www.shanzhonglei.com/?p=1704
+9. 数据库用本地存储，用lowdb就可以
+    + 用法：https://github.com/typicode/lowdb
 

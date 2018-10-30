@@ -1,5 +1,13 @@
+import model from '../models/baseModel'
+
 module.exports = {
     getUserByUserAndPwd: async (name, pwd) => {
-        return true
+        const context = 'user'
+        let db = await model.init(context)
+        let user = db.find({
+            name: name,
+            password: pwd
+        }).value()
+        return user
     }
 }

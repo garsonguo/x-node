@@ -12,7 +12,7 @@ export let login = async (ctx) => {
     }
     let user = await userService.getUserByUserAndPwd(name, password)
     return success(ctx, {
-        token: user
+        token: user.name
     })
 }
 
