@@ -1,8 +1,8 @@
 import model from '../models/baseModel'
+const context = 'user'
 
 module.exports = {
     getUserByUserAndPwd: async (name, pwd) => {
-        const context = 'user'
         let db = await model.init(context)
         let user = db.find({
             name: name,
@@ -11,9 +11,18 @@ module.exports = {
         return user
     },
     registered: async (user) => {
-        const context = 'user'
         let db = await model.init(context)
         let userInfo = db.insert(user).write()
         return userInfo
+    },
+    queryUserList: async (params) => {
+        let db = await model.init(context)
+        let userList
+        if (JSON.stringify(params) == "{}") {
+            userList = db.value()
+        } else {
+            userList = db.find(params).value()
+        }
+        return userList
     }
 }

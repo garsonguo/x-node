@@ -3,7 +3,9 @@ import {
     error
 } from '../lib/responseTemplate'
 import userService from '../services/user'
-
+/**
+ * @description 登录接口
+ */
 export const login = async (ctx) => {
     let name = ctx.query.name
     let password = ctx.query.password
@@ -15,6 +17,10 @@ export const login = async (ctx) => {
         token: user.name
     })
 }
+
+/**
+ * @description 用户注册接口
+ */
 export const registered = async (ctx) => {
     let {
         account,
@@ -35,9 +41,26 @@ export const registered = async (ctx) => {
         user
     })
 }
-export let getToken = async (ctx) => {
+
+/**
+ * @description 获取token
+ */
+export const getToken = async (ctx) => {
     const token = 'xiaobog'
     return success(ctx, {
         token: token
     })
+}
+/** 
+ * @description 查询用户列表
+ */
+
+export const queryUserList = async (ctx) => {
+    let {
+        name,
+        email
+    } = ctx.query
+    let userList = []
+    userList = await userService.queryUserList(ctx.query)
+    return success(ctx, userList)
 }
