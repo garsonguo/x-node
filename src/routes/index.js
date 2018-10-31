@@ -5,6 +5,6 @@ const router = new KoaRouter()
 
 router.get('/auth/login', api.auth.login)
     .get('/auth/getToken', api.auth.getToken)
-    .post('/auth/registeredUser', api.auth.registeredUser)
+    .post('/auth/registered', api.auth.registered)
 
 module.exports = router

@@ -10,7 +10,7 @@ module.exports = {
         }).value()
         return user
     },
-    registeredUser: async (user) => {
+    registered: async (user) => {
         const context = 'user'
         let db = await model.init(context)
         let userInfo = db.insert(user).write()

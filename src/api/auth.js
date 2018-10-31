@@ -4,7 +4,7 @@ import {
 } from '../lib/responseTemplate'
 import userService from '../services/user'
 
-export let login = async (ctx) => {
+export const login = async (ctx) => {
     let name = ctx.query.name
     let password = ctx.query.password
     if (!name || !password) {
@@ -15,14 +15,22 @@ export let login = async (ctx) => {
         token: user.name
     })
 }
-export let registeredUser = async (ctx) => {
-    let name = ctx.request.body.name
-    let password = ctx.request.body.password
+export const registered = async (ctx) => {
+    let {
+        account,
+        name,
+        password,
+        phone,
+        email
+    } = ctx.request.body
     let userInfo = {
+        account: account,
         name: name,
-        password: password
+        password: password,
+        phone: phone,
+        email: email
     }
-    let user = await userService.registeredUser(userInfo)
+    let user = await userService.registered(userInfo)
     return success(ctx, {
         user
     })

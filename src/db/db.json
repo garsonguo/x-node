@@ -1,13 +1,20 @@
 {
-    "user": [{
-            "name": "xiaobog",
-            "password": "xiaobog",
-            "id": "f28ebe4f-2e83-4420-8bf6-b9c12ece7656"
-        },
-        {
-            "name": "xiaobog12",
-            "password": "xiaobog11",
-            "id": "65105652-729d-4e02-b03d-bb60f26770e4"
-        }
-    ]
+  "user": [
+    {
+      "account": "管理员",
+      "name": "admin",
+      "password": "admin",
+      "phone": "18627185963",
+      "email": "785348023@qq.com",
+      "id": "fec4a7a1-6d08-43b3-9864-1a2808701da6"
+    },
+    {
+      "account": "过小臂",
+      "name": "111",
+      "password": "111",
+      "phone": "111",
+      "email": "111",
+      "id": "72f11834-5d3a-411e-90fd-7f087c66a700"
+    }
+  ]
 }
