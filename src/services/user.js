@@ -18,12 +18,30 @@ module.exports = {
     queryUserList: async (params) => {
         let db = await model.init(context)
         let userList
-        if (JSON.stringify(params) == "{}") {
-            userList = db.value()
+        if (params.currentPage && params.pageSize) {
+            let start = params.currentPage - 1 >= 0 ? (params.currentPage - 1) * params.pageSize : 0
+            let end = params.currentPage * params.pageSize
+            let list = db.value()
+            let count = list.length
+            let listSlice = list.slice(start, end)
+            userList = {
+                count: count,
+                list: listSlice
+            }
         } else {
-            userList = db.find(params).value()
-            if (!(userList instanceof Array) && userList) {
-                userList = [userList]
+            let list = db.find(params).value()
+            let count = list.length
+            userList = {
+                count: count,
+                list: list
+            }
+        }
+        if (userList.count === 1) {
+            let list = [userList]
+            let count = list.length
+            userList = {
+                count: count,
+                list: list
             }
         }
         return userList
