@@ -56,11 +56,30 @@ export const getToken = async (ctx) => {
  */
 
 export const queryUserList = async (ctx) => {
-    let {
-        name,
-        email
-    } = ctx.query
     let userList = []
     userList = await userService.queryUserList(ctx.query)
+    return success(ctx, userList)
+}
+
+/** 
+ * @description 删除用户
+ */
+
+export const deleteUser = async (ctx) => {
+    let {
+        id
+    } = ctx.request.body
+    let userList = []
+    userList = await userService.deleteUser(id)
+    return success(ctx, userList)
+}
+
+/** 
+ * @description 删除用户
+ */
+
+export const editUser = async (ctx) => {
+    let userList = []
+    userList = await userService.editUser(ctx.request.body)
     return success(ctx, userList)
 }

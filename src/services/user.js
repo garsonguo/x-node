@@ -22,7 +22,19 @@ module.exports = {
             userList = db.value()
         } else {
             userList = db.find(params).value()
+            if (!(userList instanceof Array) && userList) {
+                userList = [userList]
+            }
         }
         return userList
+    },
+    deleteUser: async (params) => {
+        let db = await model.init(context)
+        let result = db.removeById(params).write()
+        return result
+    },
+    editUser: async (params) => {
+        let db = await model.init(context)
+        let result = db.updateById(params.id, params).write()
     }
 }
