@@ -2,7 +2,7 @@ import {
     success,
     error
 } from '../../lib/responseTemplate'
-import userService from '../../services/user'
+import userService from '../../services/userManage/user'
 /**
  * @description 登录接口
  */

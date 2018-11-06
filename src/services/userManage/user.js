@@ -1,4 +1,4 @@
-import model from '../models/baseModel'
+import model from '../../models/baseModel'
 const context = 'user'
 
 module.exports = {

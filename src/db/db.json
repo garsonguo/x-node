@@ -1,5 +1,6 @@
 {
-  "user": [{
+  "user": [
+    {
       "account": "管理员",
       "name": "admin",
       "password": "admin1",
@@ -37,6 +38,19 @@
       "name": "3123",
       "password": "123",
       "id": "92f78cd2-78f2-4dcc-8da6-2cb5ccc26a57"
+    }
+  ],
+  "function": [
+    {
+      "name": "313",
+      "code": "123",
+      "description": "313",
+      "module": [
+        "System",
+        "SystemSet",
+        "MenuManage"
+      ],
+      "id": "b76a6da9-fa15-477d-acde-edc09f67c268"
     }
   ]
 }

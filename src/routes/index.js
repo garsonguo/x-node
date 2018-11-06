@@ -9,5 +9,9 @@ router.get('/userManage/user/login', api.userManage.user.login)
     .get('/userManage/user/queryUserList', api.userManage.user.queryUserList)
     .post('/userManage/user/deleteUser', api.userManage.user.deleteUser)
     .post('/userManage/user/editUser', api.userManage.user.editUser)
+    .post('/authManage/function/add', api.authManage.function.add)
+    .get('/authManage/function/queryList', api.authManage.function.queryList)
+    .post('/authManage/function/delete', api.authManage.function.deleteFunc)
+    .post('/authManage/function/edit', api.authManage.function.edit)
 
 module.exports = router
