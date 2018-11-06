@@ -17,31 +17,34 @@ module.exports = {
     },
     queryUserList: async (params) => {
         let db = await model.init(context)
-        let userList
-        if (params.currentPage && params.pageSize) {
-            let start = params.currentPage - 1 >= 0 ? (params.currentPage - 1) * params.pageSize : 0
-            let end = params.currentPage * params.pageSize
-            let list = db.value()
+        let userList, list, count, type
+        let start = params.currentPage - 1 >= 0 ? (params.currentPage - 1) * params.pageSize : 0
+        let end = params.currentPage * params.pageSize
+        if (params.filter !== "{}") {
+            let filter = JSON.parse(params.filter)
+            list = db.find(filter).value()
+            type = Object.prototype.toString.call(list)
+        } else {
+            list = db.value()
+            type = Object.prototype.toString.call(list)
+        }
+        if (type === "[object Object]") {
+            count = 1
+        } else {
+            count = list.length
+        }
+        if (count === 1) {
+            let obj = [list]
             let count = list.length
+            userList = {
+                count: count,
+                list: obj
+            }
+        } else {
             let listSlice = list.slice(start, end)
             userList = {
                 count: count,
                 list: listSlice
-            }
-        } else {
-            let list = db.find(params).value()
-            let count = list.length
-            userList = {
-                count: count,
-                list: list
-            }
-        }
-        if (userList.count === 1) {
-            let list = [userList]
-            let count = list.length
-            userList = {
-                count: count,
-                list: list
             }
         }
         return userList
