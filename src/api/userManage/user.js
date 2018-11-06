@@ -1,8 +1,8 @@
 import {
     success,
     error
-} from '../lib/responseTemplate'
-import userService from '../services/user'
+} from '../../lib/responseTemplate'
+import userService from '../../services/user'
 /**
  * @description 登录接口
  */

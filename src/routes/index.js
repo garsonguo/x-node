@@ -3,11 +3,11 @@ import api from '../api/index.js'
 
 const router = new KoaRouter()
 
-router.get('/auth/login', api.auth.login)
-    .get('/auth/getToken', api.auth.getToken)
-    .post('/auth/registered', api.auth.registered)
-    .get('/auth/queryUserList', api.auth.queryUserList)
-    .post('/auth/deleteUser', api.auth.deleteUser)
-    .post('/auth/editUser', api.auth.editUser)
+router.get('/userManage/user/login', api.userManage.user.login)
+    .get('/userManage/user/getToken', api.userManage.user.getToken)
+    .post('/userManage/user/registered', api.userManage.user.registered)
+    .get('/userManage/user/queryUserList', api.userManage.user.queryUserList)
+    .post('/userManage/user/deleteUser', api.userManage.user.deleteUser)
+    .post('/userManage/user/editUser', api.userManage.user.editUser)
 
 module.exports = router

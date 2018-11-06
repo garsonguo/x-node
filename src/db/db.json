@@ -1,14 +1,5 @@
 {
-  "user": [
-    {
-      "account": "335",
-      "name": "3",
-      "password": "33",
-      "id": "13dc2134-62da-4963-8354-5f6cca53db6f",
-      "_index": 1,
-      "_rowKey": 10
-    },
-    {
+  "user": [{
       "account": "管理员",
       "name": "admin",
       "password": "admin1",
