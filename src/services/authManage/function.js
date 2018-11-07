@@ -15,12 +15,16 @@ module.exports = {
         if (params.filter !== "{}") {
             let filter = JSON.parse(params.filter)
             list = db.find(filter).value()
+            count = list.length
             type = Object.prototype.toString.call(list)
         } else {
             list = db.value()
+            count = list.length
             type = Object.prototype.toString.call(list)
         }
-
+        if (type === "[object Undefined]") {
+            list = []
+        }
         let listSlice = list.slice(start, end)
         functionList = {
             count: count,

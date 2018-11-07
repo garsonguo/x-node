@@ -42,15 +42,64 @@
   ],
   "function": [
     {
-      "name": "313",
-      "code": "123",
-      "description": "313",
+      "name": "xiaobog",
+      "code": "xiaobog",
       "module": [
         "System",
         "SystemSet",
         "MenuManage"
       ],
-      "id": "b76a6da9-fa15-477d-acde-edc09f67c268"
+      "id": "0e26df9f-c313-4a55-9858-2951b9936522"
+    },
+    {
+      "name": "xiaobog1",
+      "code": "xiaobog1",
+      "module": [
+        "System",
+        "SystemSet",
+        "MenuManage"
+      ],
+      "id": "8197066f-b66e-4311-91ac-4028b6cf827a"
+    },
+    {
+      "name": "xiaobog2",
+      "code": "xiaobog2",
+      "module": [
+        "System",
+        "AuthManage",
+        "Function"
+      ],
+      "id": "7bf73966-eb4c-4fe5-9faa-25467daa7aad"
+    },
+    {
+      "name": "xiaobog3",
+      "code": "xiaobog3",
+      "module": [
+        "System",
+        "SystemSet",
+        "MenuManage"
+      ],
+      "id": "d923078b-f9cd-476e-8cd1-8b8fbc8f84f7"
+    },
+    {
+      "name": "xiaobog4",
+      "code": "xiaobog4",
+      "module": [
+        "System",
+        "SystemSet",
+        "MenuManage"
+      ],
+      "id": "ddf6e019-8acf-456b-95bb-44bb56214693"
+    },
+    {
+      "name": "xiaobog5",
+      "code": "xiaobog5",
+      "module": [
+        "System",
+        "UserManage",
+        "UserManage"
+      ],
+      "id": "50c3ebf7-f03b-4d41-9cba-0254bfcf59f9"
     }
   ]
 }
