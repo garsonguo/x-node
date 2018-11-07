@@ -13,5 +13,9 @@ router.get('/userManage/user/login', api.userManage.user.login)
     .get('/authManage/function/queryList', api.authManage.function.queryList)
     .post('/authManage/function/delete', api.authManage.function.deleteFunc)
     .post('/authManage/function/edit', api.authManage.function.edit)
+    .post('/authManage/role/add', api.authManage.role.add)
+    .get('/authManage/role/queryList', api.authManage.role.queryList)
+    .post('/authManage/role/delete', api.authManage.role.deleteFunc)
+    .post('/authManage/role/edit', api.authManage.role.edit)
 
 module.exports = router

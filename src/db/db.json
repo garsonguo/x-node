@@ -101,5 +101,41 @@
       ],
       "id": "50c3ebf7-f03b-4d41-9cba-0254bfcf59f9"
     }
+  ],
+  "role": [
+    {
+      "name": "hah",
+      "code": "dada",
+      "id": "52b8ba00-cbd6-45a8-bcd2-98e5989d59a5"
+    },
+    {
+      "name": "dsa",
+      "code": "dasd",
+      "id": "7fee2a30-a112-4f7e-b6b1-ecc68c4e5eea"
+    },
+    {
+      "name": "sad",
+      "code": "ads",
+      "description": "da",
+      "id": "1cd7a078-27ba-48f3-a68a-f68b4d7ee51c"
+    },
+    {
+      "name": "dads",
+      "code": "ad",
+      "description": "ad",
+      "id": "683e7b79-0c9e-48d8-b6e1-d1d196b16ca6"
+    },
+    {
+      "name": "dasd",
+      "code": "asd",
+      "description": "da",
+      "id": "a983bc50-f0e1-4269-ab30-775d713c7ee3"
+    },
+    {
+      "name": "dasd",
+      "code": "asd",
+      "description": "da",
+      "id": "f1f236e0-4e88-418a-8231-f80deff6d67b"
+    }
   ]
 }
