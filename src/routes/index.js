@@ -17,5 +17,8 @@ router.get('/userManage/user/login', api.userManage.user.login)
     .get('/authManage/role/queryList', api.authManage.role.queryList)
     .post('/authManage/role/delete', api.authManage.role.deleteFunc)
     .post('/authManage/role/edit', api.authManage.role.edit)
+    .post('/systemSet/menu/add', api.systemSet.menu.add)
+    .post('/systemSet/menu/delete', api.systemSet.menu.deleteMenu)
+    .post('/systemSet/menu/edit', api.systemSet.menu.edit)
 
 module.exports = router
