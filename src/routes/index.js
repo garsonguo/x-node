@@ -20,5 +20,6 @@ router.get('/userManage/user/login', api.userManage.user.login)
     .post('/systemSet/menu/add', api.systemSet.menu.add)
     .post('/systemSet/menu/delete', api.systemSet.menu.deleteMenu)
     .post('/systemSet/menu/edit', api.systemSet.menu.edit)
+    .get('/systemSet/menu/queryList', api.systemSet.menu.queryList)
 
 module.exports = router

@@ -7,33 +7,10 @@ module.exports = {
         let info = db.insert(func).write()
         return info
     },
-    queryList: async (params) => {
+    queryList: async () => {
         let db = await model.init(context)
-        let result, list, count, type
-        let start = params.currentPage - 1 >= 0 ? (params.currentPage - 1) * params.pageSize : 0
-        let end = params.currentPage * params.pageSize
-        if (params.filter !== "{}") {
-            let filter = JSON.parse(params.filter)
-            list = db.find(filter).value()
-            count = list.length
-            type = Object.prototype.toString.call(list)
-        } else {
-            list = db.value()
-            count = list.length
-            type = Object.prototype.toString.call(list)
-        }
-        if (type === "[object Undefined]") {
-            list = []
-        }
-        if (type === "[object Object]") {
-            list = [list]
-        }
-        let listSlice = list.slice(start, end)
-        result = {
-            count: count,
-            list: listSlice
-        }
-        return result
+        let list = db.value()
+        return list
     },
     deleteFunc: async (params) => {
         let db = await model.init(context)

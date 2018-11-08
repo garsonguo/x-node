@@ -10,7 +10,7 @@ import service from '../../services/systemSet/menu'
 
 export const queryList = async (ctx) => {
     let list = []
-    list = await service.queryList(ctx.query)
+    list = await service.queryList()
     return success(ctx, list)
 }
 /**
@@ -23,7 +23,7 @@ export const add = async (ctx) => {
         title,
         authCode,
         sort,
-        leftShow,
+        expand,
         lock,
         icon
     } = ctx.request.body
@@ -32,10 +32,11 @@ export const add = async (ctx) => {
         title: title,
         name: name,
         sort: sort,
-        leftShow: leftShow,
+        authCode: authCode,
         lock: lock,
         icon: icon,
-        path: name
+        path: name,
+        expand: expand
     }
     let data = await service.add(info)
     return success(ctx, data)

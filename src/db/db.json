@@ -138,5 +138,197 @@
       "id": "f1f236e0-4e88-418a-8231-f80deff6d67b"
     }
   ],
-  "menu": []
+  "menu": [
+    {
+      "parentId": 0,
+      "title": "系统",
+      "name": "系统",
+      "sort": 0,
+      "authCode": "0",
+      "lock": true,
+      "icon": "icon-fa",
+      "path": "系统",
+      "expand": true,
+      "id": "1ea5a612-d309-421e-ad6a-b8ef4f520795"
+    },
+    {
+      "parentId": "1ea5a612-d309-421e-ad6a-b8ef4f520795",
+      "title": "系统设置",
+      "name": "系统设置",
+      "sort": 0,
+      "authCode": "0",
+      "lock": true,
+      "icon": "icon-fa",
+      "path": "系统设置",
+      "expand": false,
+      "id": "3092f266-5347-44cb-a69d-84372c6425d9"
+    },
+    {
+      "parentId": "1ea5a612-d309-421e-ad6a-b8ef4f520795",
+      "title": "权限管理",
+      "name": "权限管理",
+      "sort": 0,
+      "authCode": "0",
+      "lock": true,
+      "icon": "icon-fa",
+      "path": "权限管理",
+      "expand": false,
+      "id": "a2db31fb-6004-470d-883f-a79f4842bc83"
+    },
+    {
+      "parentId": "1ea5a612-d309-421e-ad6a-b8ef4f520795",
+      "title": "组织构架",
+      "name": "组织构架",
+      "sort": 0,
+      "authCode": "0",
+      "lock": true,
+      "icon": "icon-fa",
+      "path": "组织构架",
+      "expand": false,
+      "id": "a4a2283a-e98f-465f-be01-d2c7f33197b2"
+    },
+    {
+      "parentId": "1ea5a612-d309-421e-ad6a-b8ef4f520795",
+      "title": "用户管理",
+      "name": "用户管理",
+      "sort": 0,
+      "authCode": "0",
+      "lock": true,
+      "icon": "icon-fa",
+      "path": "用户管理",
+      "expand": false,
+      "id": "47667e7e-1013-4d44-99ef-4579b64cf0aa"
+    },
+    {
+      "parentId": "3092f266-5347-44cb-a69d-84372c6425d9",
+      "title": "菜单管理",
+      "name": "菜单管理",
+      "sort": 0,
+      "authCode": "0",
+      "lock": true,
+      "icon": "icon-fa",
+      "path": "菜单管理",
+      "expand": false,
+      "id": "fc7f2248-2d59-4804-a778-1265d51fda55"
+    },
+    {
+      "parentId": "a2db31fb-6004-470d-883f-a79f4842bc83",
+      "title": "功能管理",
+      "name": "功能管理",
+      "sort": 0,
+      "authCode": "0",
+      "lock": true,
+      "icon": "icon-fa",
+      "path": "功能管理",
+      "expand": false,
+      "id": "35c2f180-385d-48a9-9a02-148fba5f38a9"
+    },
+    {
+      "parentId": "a2db31fb-6004-470d-883f-a79f4842bc83",
+      "title": "角色管理",
+      "name": "角色管理",
+      "sort": 0,
+      "authCode": "0",
+      "lock": true,
+      "icon": "icon-fa",
+      "path": "角色管理",
+      "expand": false,
+      "id": "6e2ce038-367f-4802-9a6c-cf42c584cc22"
+    },
+    {
+      "parentId": "a2db31fb-6004-470d-883f-a79f4842bc83",
+      "title": "角色权限管理",
+      "name": "角色权限管理",
+      "sort": 0,
+      "authCode": "0",
+      "lock": true,
+      "icon": "icon-fa",
+      "path": "角色权限管理",
+      "expand": false,
+      "id": "4d6e4f76-98a0-4e4d-8422-dad6945db808"
+    },
+    {
+      "parentId": "a2db31fb-6004-470d-883f-a79f4842bc83",
+      "title": "角色用户管理",
+      "name": "角色用户管理",
+      "sort": 0,
+      "authCode": "0",
+      "lock": true,
+      "icon": "icon-fa",
+      "path": "角色用户管理",
+      "expand": false,
+      "id": "c042fd07-a28f-4b78-8edb-5e771287440b"
+    },
+    {
+      "parentId": "a2db31fb-6004-470d-883f-a79f4842bc83",
+      "title": "用户角色管理",
+      "name": "用户角色管理",
+      "sort": 0,
+      "authCode": "0",
+      "lock": true,
+      "icon": "icon-fa",
+      "path": "用户角色管理",
+      "expand": false,
+      "id": "3efba6c6-aa02-4aa3-97b3-3e424b94305e"
+    },
+    {
+      "parentId": "a4a2283a-e98f-465f-be01-d2c7f33197b2",
+      "title": "部门管理",
+      "name": "部门管理",
+      "sort": 0,
+      "authCode": "0",
+      "lock": true,
+      "icon": "icon-fa",
+      "path": "部门管理",
+      "expand": false,
+      "id": "76e534ae-6275-4c9a-8288-4c6e4f5783b5"
+    },
+    {
+      "parentId": "a4a2283a-e98f-465f-be01-d2c7f33197b2",
+      "title": "职位管理",
+      "name": "职位管理",
+      "sort": 0,
+      "authCode": "0",
+      "lock": true,
+      "icon": "icon-fa",
+      "path": "职位管理",
+      "expand": false,
+      "id": "5aa5a24d-4b36-4895-9dab-17ed70a57a38"
+    },
+    {
+      "parentId": "47667e7e-1013-4d44-99ef-4579b64cf0aa",
+      "title": "用户管理",
+      "name": "用户管理",
+      "sort": 0,
+      "authCode": "0",
+      "lock": true,
+      "icon": "icon-fa",
+      "path": "用户管理",
+      "expand": false,
+      "id": "9fe5250a-32a7-4612-9bde-048f64e7171c"
+    },
+    {
+      "parentId": 0,
+      "title": "hhahahah",
+      "name": "hhahahah",
+      "sort": 0,
+      "authCode": "0",
+      "lock": false,
+      "path": "hhahahah",
+      "expand": true,
+      "id": "b56a1c36-03dd-4c71-b83f-b607db1597c5"
+    },
+    {
+      "parentId": "b56a1c36-03dd-4c71-b83f-b607db1597c5",
+      "title": "3131",
+      "name": "312",
+      "sort": 0,
+      "authCode": "3113",
+      "lock": false,
+      "icon": "icon-fa",
+      "path": "312",
+      "expand": true,
+      "id": "8248f51b-1605-4f40-8c3c-fc4a5f4e0890"
+    }
+  ]
 }
