@@ -15,7 +15,6 @@ module.exports = {
         if (params.filter !== "{}") {
             let filter = JSON.parse(params.filter)
             list = db.find(filter).value()
-            count = list.length
             type = Object.prototype.toString.call(list)
         } else {
             list = db.value()
@@ -28,6 +27,7 @@ module.exports = {
         if (type === "[object Object]") {
             list = [list]
         }
+        count = list.length
         let listSlice = list.slice(start, end)
         result = {
             count: count,
@@ -44,5 +44,25 @@ module.exports = {
         let db = await model.init(context)
         let result = db.updateById(params.id, params).write()
         return result
+    },
+    roleAddUser: async (params) => {
+        let db = await model.init('roleUser')
+        let result = db.insert(params).write()
+        return result
+    },
+    queryRoleUser: async (roleId) => {
+        let db = await model.init('roleUser')
+        let filter = {
+            roleId
+        }
+        let result = db.find(filter).value()
+        let a = result
+        return result
+    },
+    deleteRoleUser: async (params) => {
+        let db = await model.init('roleUser')
+        let result = db.removeWhere(params).write()
+        return result
     }
+
 }

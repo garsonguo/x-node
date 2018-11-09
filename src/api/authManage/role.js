@@ -55,3 +55,50 @@ export const deleteFunc = async (ctx) => {
     list = await roleService.deleteFunc(id)
     return success(ctx, list)
 }
+
+/** 
+ * @description 角色添加用户
+ */
+
+export const roleAddUser = async (ctx) => {
+    let {
+        roleId,
+        userId
+    } = ctx.request.body
+    let ids = {
+        roleId,
+        userId
+    }
+    let list = []
+    list = await roleService.roleAddUser(ids)
+    return success(ctx, list)
+}
+
+/**
+ * @description 查询角色下是否有用户
+ */
+export const queryRoleUser = async (ctx) => {
+    let {
+        roleId
+    } = ctx.query
+    let result = []
+    result = await roleService.queryRoleUser(roleId)
+    return success(ctx, result)
+}
+
+/**
+ * @description 删除角色用户
+ */
+export const deleteRoleUser = async (ctx) => {
+    let {
+        roleId,
+        userId
+    } = ctx.request.body
+    let filter = {
+        roleId,
+        userId
+    }
+    let list = []
+    list = await roleService.deleteRoleUser(filter)
+    return success(ctx, list)
+}

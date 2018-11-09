@@ -330,5 +330,17 @@
       "expand": true,
       "id": "8248f51b-1605-4f40-8c3c-fc4a5f4e0890"
     }
+  ],
+  "roleUser": [
+    {
+      "roleId": "52b8ba00-cbd6-45a8-bcd2-98e5989d59a5",
+      "userId": "8fd48341-b156-40bf-a487-bbe2a1aac53e",
+      "id": "4a7c71f2-7cf9-4792-a636-d7e4c7f708d4"
+    },
+    {
+      "roleId": "52b8ba00-cbd6-45a8-bcd2-98e5989d59a5",
+      "userId": "1cdf34ee-169e-418f-8b7c-6674937e7d49",
+      "id": "1f947242-6cb8-47f4-9cf7-f66439c1302c"
+    }
   ]
 }
