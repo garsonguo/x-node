@@ -53,7 +53,7 @@ module.exports = {
     queryRoleUser: async (roleId) => {
         let db = await model.init('roleUser')
         let filter = {
-            roleId
+            "roleId": roleId
         }
         let result = db.find(filter).value()
         let a = result
