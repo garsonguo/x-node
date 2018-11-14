@@ -59,6 +59,15 @@ module.exports = {
         let a = result
         return result
     },
+    queryUserRole: async (userId) => {
+        let db = await model.init('roleUser')
+        let filter = {
+            "userId": userId
+        }
+        let result = db.find(filter).value()
+        let a = result
+        return result
+    },
     deleteRoleUser: async (params) => {
         let db = await model.init('roleUser')
         let result = db.removeWhere(params).write()

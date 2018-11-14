@@ -87,6 +87,18 @@ export const queryRoleUser = async (ctx) => {
 }
 
 /**
+ * @description 查询用户下是否有角色
+ */
+export const queryUserRole = async (ctx) => {
+    let {
+        userId
+    } = ctx.query
+    let result = []
+    result = await roleService.queryUserRole(userId)
+    return success(ctx, result)
+}
+
+/**
  * @description 删除角色用户
  */
 export const deleteRoleUser = async (ctx) => {

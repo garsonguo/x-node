@@ -42,64 +42,26 @@
   ],
   "function": [
     {
-      "name": "xiaobog",
-      "code": "xiaobog",
+      "name": "菜单添加2",
+      "code": "菜单添加2",
       "module": [
-        "System",
-        "SystemSet",
-        "MenuManage"
+        "系统",
+        "系统设置",
+        "菜单管理"
       ],
-      "id": "0e26df9f-c313-4a55-9858-2951b9936522"
+      "id": "08bedac6-3af1-4d96-b0f9-325b47079ecc",
+      "_index": 0,
+      "_rowKey": 5
     },
     {
-      "name": "xiaobog1",
-      "code": "xiaobog1",
+      "name": "菜单删除",
+      "code": "菜单删除",
       "module": [
-        "System",
-        "SystemSet",
-        "MenuManage"
+        "系统",
+        "系统设置",
+        "菜单管理"
       ],
-      "id": "8197066f-b66e-4311-91ac-4028b6cf827a"
-    },
-    {
-      "name": "xiaobog2",
-      "code": "xiaobog2",
-      "module": [
-        "System",
-        "AuthManage",
-        "Function"
-      ],
-      "id": "7bf73966-eb4c-4fe5-9faa-25467daa7aad"
-    },
-    {
-      "name": "xiaobog3",
-      "code": "xiaobog3",
-      "module": [
-        "System",
-        "SystemSet",
-        "MenuManage"
-      ],
-      "id": "d923078b-f9cd-476e-8cd1-8b8fbc8f84f7"
-    },
-    {
-      "name": "xiaobog4",
-      "code": "xiaobog4",
-      "module": [
-        "System",
-        "SystemSet",
-        "MenuManage"
-      ],
-      "id": "ddf6e019-8acf-456b-95bb-44bb56214693"
-    },
-    {
-      "name": "xiaobog5",
-      "code": "xiaobog5",
-      "module": [
-        "System",
-        "UserManage",
-        "UserManage"
-      ],
-      "id": "50c3ebf7-f03b-4d41-9cba-0254bfcf59f9"
+      "id": "167e0410-5fa9-4b2a-9886-7fca4f84baef"
     }
   ],
   "role": [
@@ -334,13 +296,13 @@
   "roleUser": [
     {
       "roleId": "52b8ba00-cbd6-45a8-bcd2-98e5989d59a5",
-      "userId": "8fd48341-b156-40bf-a487-bbe2a1aac53e",
-      "id": "4a7c71f2-7cf9-4792-a636-d7e4c7f708d4"
+      "userId": "1cdf34ee-169e-418f-8b7c-6674937e7d49",
+      "id": "1f947242-6cb8-47f4-9cf7-f66439c1302c"
     },
     {
       "roleId": "52b8ba00-cbd6-45a8-bcd2-98e5989d59a5",
-      "userId": "1cdf34ee-169e-418f-8b7c-6674937e7d49",
-      "id": "1f947242-6cb8-47f4-9cf7-f66439c1302c"
+      "userId": "8fd48341-b156-40bf-a487-bbe2a1aac53e",
+      "id": "b41ee2f5-7146-4386-9864-f8699aaf5565"
     }
   ]
 }
