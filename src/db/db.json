@@ -304,5 +304,17 @@
       "userId": "8fd48341-b156-40bf-a487-bbe2a1aac53e",
       "id": "b41ee2f5-7146-4386-9864-f8699aaf5565"
     }
+  ],
+  "access": [
+    {
+      "roleId": "52b8ba00-cbd6-45a8-bcd2-98e5989d59a5",
+      "menuId": "fc7f2248-2d59-4804-a778-1265d51fda55",
+      "id": "66e47f11-868d-4faa-9d9d-781567fd8502"
+    },
+    {
+      "roleId": "52b8ba00-cbd6-45a8-bcd2-98e5989d59a5",
+      "menuId": "35c2f180-385d-48a9-9a02-148fba5f38a9",
+      "id": "c7e45b2e-2af6-4738-ab1d-dde01207e75f"
+    }
   ]
 }

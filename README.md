@@ -22,4 +22,6 @@
     + 用法：https://www.shanzhonglei.com/?p=1704
 9. 数据库用本地存储，用lowdb就可以
     + 用法：https://github.com/typicode/lowdb
+10. RBAC基于角色的全新访问控制：https://www.cnblogs.com/leestar54/p/5342665.html
+    + 表字段参照文章中的字段
 

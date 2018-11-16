@@ -33,6 +33,36 @@ export const add = async (ctx) => {
     })
 }
 
+/**
+ * @description 新增角色权限接口
+ */
+export const addAccess = async (ctx) => {
+    let {
+        roleId,
+        nodeIds
+    } = ctx.request.body
+    let ids = []
+    nodeIds.forEach(menuId => {
+        let info = {
+            roleId,
+            menuId
+        }
+        ids.push(info)
+    });
+    result = await roleService.addAccess(ids)
+    return success(ctx, {
+        result
+    })
+}
+/** 
+ * @description 查询角色权限列表接口
+ */
+
+export const queryAccessList = async (ctx) => {
+    let list = []
+    list = await roleService.queryAccessList(ctx.query.roleId)
+    return success(ctx, list)
+}
 /** 
  * @description 编辑用户
  */

@@ -72,6 +72,22 @@ module.exports = {
         let db = await model.init('roleUser')
         let result = db.removeWhere(params).write()
         return result
+    },
+    addAccess: async (ids) => {
+        let db = await model.init('access')
+        let result = []
+        ids.forEach(item => {
+            let info = db.insert(item).write()
+            result.push(info)
+        })
+        return result
+    },
+    queryAccessList: async (id) => {
+        let db = await model.init('access')
+        let filter = {
+            "roleId": id
+        }
+        let result = db.find(filter).value();
+        return result
     }
-
 }

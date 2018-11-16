@@ -23,6 +23,8 @@ router.get('/userManage/user/login', api.userManage.user.login)
     .get('/authManage/role/queryRoleUser', api.authManage.role.queryRoleUser)
     .get('/authManage/role/queryUserRole', api.authManage.role.queryUserRole)
     .post('/authManage/role/deleteRoleUser', api.authManage.role.deleteRoleUser)
+    .post('/authManage/role/addAccess', api.authManage.role.addAccess)
+    .get('/authManage/role/queryAccessList', api.authManage.role.queryAccessList)
 
     .post('/systemSet/menu/add', api.systemSet.menu.add)
     .post('/systemSet/menu/delete', api.systemSet.menu.deleteMenu)
