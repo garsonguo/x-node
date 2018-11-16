@@ -14,18 +14,10 @@ module.exports = {
         let end = params.currentPage * params.pageSize
         if (params.filter !== "{}") {
             let filter = JSON.parse(params.filter)
-            list = db.find(filter).value()
-            type = Object.prototype.toString.call(list)
+            list = db.filter(filter).value()
         } else {
             list = db.value()
             count = list.length
-            type = Object.prototype.toString.call(list)
-        }
-        if (type === "[object Undefined]") {
-            list = []
-        }
-        if (type === "[object Object]") {
-            list = [list]
         }
         count = list.length
         let listSlice = list.slice(start, end)

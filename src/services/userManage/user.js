@@ -22,30 +22,15 @@ module.exports = {
         let end = params.currentPage * params.pageSize
         if (params.filter !== "{}") {
             let filter = JSON.parse(params.filter)
-            list = db.find(filter).value()
-            type = Object.prototype.toString.call(list)
+            list = db.filter(filter).value()
         } else {
             list = db.value()
-            type = Object.prototype.toString.call(list)
         }
-        if (type === "[object Object]") {
-            count = 1
-        } else {
-            count = list.length
-        }
-        if (count === 1) {
-            let obj = [list]
-            let count = list.length
-            userList = {
-                count: count,
-                list: obj
-            }
-        } else {
-            let listSlice = list.slice(start, end)
-            userList = {
-                count: count,
-                list: listSlice
-            }
+
+        let listSlice = list.slice(start, end)
+        userList = {
+            count: count,
+            list: listSlice
         }
         return userList
     },
