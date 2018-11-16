@@ -55,7 +55,7 @@ module.exports = {
         let filter = {
             "roleId": roleId
         }
-        let result = db.find(filter).value()
+        let result = db.filter(filter).value()
         let a = result
         return result
     },
@@ -64,7 +64,7 @@ module.exports = {
         let filter = {
             "userId": userId
         }
-        let result = db.find(filter).value()
+        let result = db.filter(filter).value()
         let a = result
         return result
     },
@@ -87,7 +87,7 @@ module.exports = {
         let filter = {
             "roleId": id
         }
-        let result = db.find(filter).value();
+        let result = db.filter(filter).value();
         return result
     }
 }
