@@ -21,7 +21,7 @@ export const add = async (ctx) => {
         parentId,
         name,
         title,
-        authCode,
+        path,
         sort,
         expand,
         lock,
@@ -32,10 +32,9 @@ export const add = async (ctx) => {
         title: title,
         name: name,
         sort: sort,
-        authCode: authCode,
         lock: lock,
         icon: icon,
-        path: name,
+        path: path,
         expand: expand
     }
     let data = await service.add(info)
