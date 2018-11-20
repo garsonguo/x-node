@@ -62,6 +62,16 @@ export const queryUserList = async (ctx) => {
 }
 
 /** 
+ * @description 根据用户ID查询menu列表
+ */
+
+export const queryMenuByUserName = async (ctx) => {
+    let userList = []
+    userList = await userService.queryMenuByUserName(ctx.query.name)
+    return success(ctx, userList)
+}
+
+/** 
  * @description 删除用户
  */
 

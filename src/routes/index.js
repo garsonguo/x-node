@@ -9,6 +9,7 @@ router.get('/userManage/user/login', api.userManage.user.login)
     .get('/userManage/user/queryUserList', api.userManage.user.queryUserList)
     .post('/userManage/user/deleteUser', api.userManage.user.deleteUser)
     .post('/userManage/user/editUser', api.userManage.user.editUser)
+    .get('/userManage/user/queryMenuByUserName', api.userManage.user.queryMenuByUserName)
 
     .post('/authManage/function/add', api.authManage.function.add)
     .get('/authManage/function/queryList', api.authManage.function.queryList)

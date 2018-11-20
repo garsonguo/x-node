@@ -42,5 +42,41 @@ module.exports = {
     editUser: async (params) => {
         let db = await model.init(context)
         let result = db.updateById(params.id, params).write()
+    },
+    queryMenuByUserName: async (name) => {
+        let udb = await model.init("user")
+        let db = await model.init('roleUser')
+        let adb = await model.init('access')
+        let mdb = await model.init('menu')
+        let user = udb.find({
+            name: name
+        }).value()
+        let idParams = {
+            userId: user.id
+        }
+        let roleUser = db.filter(idParams).value()
+        let roleArray = []
+        roleUser.forEach(item => {
+            roleArray.push(item.roleId)
+        })
+        let menuArray = []
+        roleArray.forEach(item => {
+            let roleId = {
+                roleId: item
+            }
+            let access = adb.filter(roleId).value()
+            access.forEach(item => {
+                menuArray.push(item.menuId)
+            })
+        })
+        let result = []
+        menuArray.forEach(item => {
+            let menuId = {
+                id: item
+            }
+            let menu = mdb.filter(menuId).value()
+            result = result.concat(menu)
+        })
+        return result
     }
 }

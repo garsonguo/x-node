@@ -9,95 +9,23 @@
       "id": "8fd48341-b156-40bf-a487-bbe2a1aac53e"
     },
     {
-      "account": "12121",
-      "name": "2121",
-      "password": "21221",
-      "id": "1cdf34ee-169e-418f-8b7c-6674937e7d49"
-    },
-    {
-      "account": "2121",
-      "name": "21",
-      "password": "21",
-      "id": "5117d6ea-3fc8-4d33-a4f0-c9cfda3d9d40"
-    },
-    {
-      "account": "2121",
-      "name": "2121",
-      "password": "212",
-      "email": "",
-      "id": "8e187dff-ae3e-433c-8532-87322a4cfc8b"
-    },
-    {
-      "account": "323123",
-      "name": "1231",
-      "password": "231",
-      "id": "4c050872-be12-4041-9214-18c1187b6d81"
-    },
-    {
-      "account": "3131",
-      "name": "3123",
-      "password": "123",
-      "id": "92f78cd2-78f2-4dcc-8da6-2cb5ccc26a57"
+      "account": "测试人员",
+      "name": "test",
+      "password": "123456",
+      "id": "95db4cc9-194a-4b29-99c3-a4a1e5e3e02d"
     }
   ],
-  "function": [
-    {
-      "name": "菜单添加2",
-      "code": "菜单添加2",
-      "module": [
-        "系统",
-        "系统设置",
-        "菜单管理"
-      ],
-      "id": "08bedac6-3af1-4d96-b0f9-325b47079ecc",
-      "_index": 0,
-      "_rowKey": 5
-    },
-    {
-      "name": "菜单删除",
-      "code": "菜单删除",
-      "module": [
-        "系统",
-        "系统设置",
-        "菜单管理"
-      ],
-      "id": "167e0410-5fa9-4b2a-9886-7fca4f84baef"
-    }
-  ],
+  "function": [],
   "role": [
     {
-      "name": "hah",
-      "code": "dada",
-      "id": "52b8ba00-cbd6-45a8-bcd2-98e5989d59a5"
+      "name": "管理员",
+      "code": "管理员",
+      "id": "a496ca30-77fd-4bdf-8e0b-65720b0006f7"
     },
     {
-      "name": "dsa",
-      "code": "dasd",
-      "id": "7fee2a30-a112-4f7e-b6b1-ecc68c4e5eea"
-    },
-    {
-      "name": "sad",
-      "code": "ads",
-      "description": "da",
-      "id": "1cd7a078-27ba-48f3-a68a-f68b4d7ee51c"
-    },
-    {
-      "name": "dads",
-      "code": "ad",
-      "description": "ad",
-      "id": "683e7b79-0c9e-48d8-b6e1-d1d196b16ca6"
-    },
-    {
-      "name": "dasd",
-      "code": "asd",
-      "description": "da",
-      "id": "a983bc50-f0e1-4269-ab30-775d713c7ee3"
-    },
-    {
-      "name": "dasd",
-      "code": "asd",
-      "description": "da",
-      "id": "f1f236e0-4e88-418a-8231-f80deff6d67b"
+      "name": "测试人员",
+      "code": "测试人员",
+      "id": "fe2f35ed-c9eb-416e-b5ea-e3b9c30c10e1"
     }
   ],
   "menu": [
@@ -163,7 +91,7 @@
       "sort": 0,
       "lock": false,
       "icon": "icon-fa",
-      "path": "/SystemSet/MenuManage",
+      "path": "/System/SystemSet/MenuManage",
       "expand": true,
       "id": "fc7f2248-2d59-4804-a778-1265d51fda55"
     },
@@ -174,7 +102,7 @@
       "sort": 0,
       "lock": true,
       "icon": "icon-fa",
-      "path": "/AuthManage/Function",
+      "path": "/System/AuthManage/Function",
       "expand": false,
       "id": "35c2f180-385d-48a9-9a02-148fba5f38a9"
     },
@@ -185,7 +113,7 @@
       "sort": 0,
       "lock": true,
       "icon": "icon-fa",
-      "path": "/AuthManage/Role",
+      "path": "/System/AuthManage/Role",
       "expand": false,
       "id": "6e2ce038-367f-4802-9a6c-cf42c584cc22"
     },
@@ -196,7 +124,7 @@
       "sort": 0,
       "lock": true,
       "icon": "icon-fa",
-      "path": "/AuthManage/RoleAuth",
+      "path": "/System/AuthManage/RoleAuth",
       "expand": false,
       "id": "4d6e4f76-98a0-4e4d-8422-dad6945db808"
     },
@@ -207,7 +135,7 @@
       "sort": 0,
       "lock": true,
       "icon": "icon-fa",
-      "path": "/AuthManage/RoleUser",
+      "path": "/System/AuthManage/RoleUser",
       "expand": false,
       "id": "c042fd07-a28f-4b78-8edb-5e771287440b"
     },
@@ -218,7 +146,7 @@
       "sort": 0,
       "lock": true,
       "icon": "icon-fa",
-      "path": "/AuthManage/UserRole",
+      "path": "/System/AuthManage/UserRole",
       "expand": false,
       "id": "3efba6c6-aa02-4aa3-97b3-3e424b94305e"
     },
@@ -229,7 +157,7 @@
       "sort": 0,
       "lock": true,
       "icon": "icon-fa",
-      "path": "/OrgStructure/DepManage",
+      "path": "/System/OrgStructure/DepManage",
       "expand": false,
       "id": "76e534ae-6275-4c9a-8288-4c6e4f5783b5"
     },
@@ -240,7 +168,7 @@
       "sort": 0,
       "lock": true,
       "icon": "icon-fa",
-      "path": "/OrgStructure/PosManage",
+      "path": "/System/OrgStructure/PosManage",
       "expand": false,
       "id": "5aa5a24d-4b36-4895-9dab-17ed70a57a38"
     },
@@ -251,7 +179,7 @@
       "sort": 0,
       "lock": true,
       "icon": "icon-fa",
-      "path": "/UserManage/UserManage",
+      "path": "/System/UserManage/UserManage",
       "expand": false,
       "id": "9fe5250a-32a7-4612-9bde-048f64e7171c"
     },
@@ -269,61 +197,96 @@
   ],
   "roleUser": [
     {
-      "roleId": "52b8ba00-cbd6-45a8-bcd2-98e5989d59a5",
+      "roleId": "a496ca30-77fd-4bdf-8e0b-65720b0006f7",
       "userId": "8fd48341-b156-40bf-a487-bbe2a1aac53e",
-      "id": "b41ee2f5-7146-4386-9864-f8699aaf5565"
+      "id": "f3092467-843d-44bc-99f5-cdb8a98b48a9"
     },
     {
-      "roleId": "52b8ba00-cbd6-45a8-bcd2-98e5989d59a5",
-      "userId": "5117d6ea-3fc8-4d33-a4f0-c9cfda3d9d40",
-      "id": "6823fb41-bab7-4961-bf7f-bd9247b21fc4"
-    },
-    {
-      "roleId": "52b8ba00-cbd6-45a8-bcd2-98e5989d59a5",
-      "userId": "8e187dff-ae3e-433c-8532-87322a4cfc8b",
-      "id": "4ace0834-c83f-4f4e-93f7-cb80a0819250"
-    },
-    {
-      "roleId": "52b8ba00-cbd6-45a8-bcd2-98e5989d59a5",
-      "userId": "4c050872-be12-4041-9214-18c1187b6d81",
-      "id": "fc67e3b2-2bbb-405d-a12c-8aa875503de4"
-    },
-    {
-      "roleId": "52b8ba00-cbd6-45a8-bcd2-98e5989d59a5",
-      "userId": "1cdf34ee-169e-418f-8b7c-6674937e7d49",
-      "id": "a23d38b5-1007-424b-b656-c92474ca58d4"
-    },
-    {
-      "roleId": "7fee2a30-a112-4f7e-b6b1-ecc68c4e5eea",
-      "userId": "8fd48341-b156-40bf-a487-bbe2a1aac53e",
-      "id": "8ef63316-01cc-4b44-ab98-0e6b95eea888"
+      "roleId": "fe2f35ed-c9eb-416e-b5ea-e3b9c30c10e1",
+      "userId": "95db4cc9-194a-4b29-99c3-a4a1e5e3e02d",
+      "id": "d61a4519-4e1e-4d68-b385-aad2200a4fea"
     }
   ],
   "access": [
     {
-      "roleId": "52b8ba00-cbd6-45a8-bcd2-98e5989d59a5",
+      "roleId": "a496ca30-77fd-4bdf-8e0b-65720b0006f7",
+      "menuId": "1ea5a612-d309-421e-ad6a-b8ef4f520795",
+      "id": "f67f263d-e415-4faa-87b3-0b10dd186ab2"
+    },
+    {
+      "roleId": "a496ca30-77fd-4bdf-8e0b-65720b0006f7",
+      "menuId": "3092f266-5347-44cb-a69d-84372c6425d9",
+      "id": "19d84a80-d214-4620-9e81-cd1612445043"
+    },
+    {
+      "roleId": "a496ca30-77fd-4bdf-8e0b-65720b0006f7",
       "menuId": "fc7f2248-2d59-4804-a778-1265d51fda55",
-      "id": "66e47f11-868d-4faa-9d9d-781567fd8502"
+      "id": "4319143d-8a4e-45fa-8f65-d8c167052aa8"
     },
     {
-      "roleId": "52b8ba00-cbd6-45a8-bcd2-98e5989d59a5",
+      "roleId": "a496ca30-77fd-4bdf-8e0b-65720b0006f7",
+      "menuId": "a2db31fb-6004-470d-883f-a79f4842bc83",
+      "id": "26720f78-3c5b-40df-b9dc-4208cfe056fc"
+    },
+    {
+      "roleId": "a496ca30-77fd-4bdf-8e0b-65720b0006f7",
       "menuId": "35c2f180-385d-48a9-9a02-148fba5f38a9",
-      "id": "c7e45b2e-2af6-4738-ab1d-dde01207e75f"
+      "id": "462d7bea-2516-4d07-a81f-547ad393f151"
     },
     {
-      "roleId": "7fee2a30-a112-4f7e-b6b1-ecc68c4e5eea",
-      "menuId": "35c2f180-385d-48a9-9a02-148fba5f38a9",
-      "id": "7f779305-29c3-4d67-b1aa-6bb89ffde0fa"
-    },
-    {
-      "roleId": "7fee2a30-a112-4f7e-b6b1-ecc68c4e5eea",
+      "roleId": "a496ca30-77fd-4bdf-8e0b-65720b0006f7",
       "menuId": "6e2ce038-367f-4802-9a6c-cf42c584cc22",
-      "id": "a612efc9-0888-4de3-93ec-45ee6509f273"
+      "id": "801a4311-7e12-4116-b73a-28dbd8985fcd"
     },
     {
-      "roleId": "7fee2a30-a112-4f7e-b6b1-ecc68c4e5eea",
+      "roleId": "a496ca30-77fd-4bdf-8e0b-65720b0006f7",
       "menuId": "4d6e4f76-98a0-4e4d-8422-dad6945db808",
-      "id": "e5c03c58-ed50-43e5-a716-365bd3610aa7"
+      "id": "5cec414b-163d-4e44-861e-08721d026371"
+    },
+    {
+      "roleId": "a496ca30-77fd-4bdf-8e0b-65720b0006f7",
+      "menuId": "c042fd07-a28f-4b78-8edb-5e771287440b",
+      "id": "bcd7aa6d-0aa2-46d4-9dad-003be7b10eb8"
+    },
+    {
+      "roleId": "a496ca30-77fd-4bdf-8e0b-65720b0006f7",
+      "menuId": "3efba6c6-aa02-4aa3-97b3-3e424b94305e",
+      "id": "83ebde64-c2c7-4e5d-b629-6416f590cd96"
+    },
+    {
+      "roleId": "a496ca30-77fd-4bdf-8e0b-65720b0006f7",
+      "menuId": "a4a2283a-e98f-465f-be01-d2c7f33197b2",
+      "id": "d45cbc0b-c58f-4143-960d-d87805117bbd"
+    },
+    {
+      "roleId": "a496ca30-77fd-4bdf-8e0b-65720b0006f7",
+      "menuId": "76e534ae-6275-4c9a-8288-4c6e4f5783b5",
+      "id": "6d5b41eb-6080-4b5c-9aba-d8575dc44867"
+    },
+    {
+      "roleId": "a496ca30-77fd-4bdf-8e0b-65720b0006f7",
+      "menuId": "5aa5a24d-4b36-4895-9dab-17ed70a57a38",
+      "id": "3b81a8db-f0f6-49e0-bf92-b504b543de4b"
+    },
+    {
+      "roleId": "a496ca30-77fd-4bdf-8e0b-65720b0006f7",
+      "menuId": "47667e7e-1013-4d44-99ef-4579b64cf0aa",
+      "id": "7837ea96-9bdc-432c-9d71-9b37a816a9d8"
+    },
+    {
+      "roleId": "a496ca30-77fd-4bdf-8e0b-65720b0006f7",
+      "menuId": "9fe5250a-32a7-4612-9bde-048f64e7171c",
+      "id": "59a6963c-df5f-4871-ba2c-5966c40d1af0"
+    },
+    {
+      "roleId": "a496ca30-77fd-4bdf-8e0b-65720b0006f7",
+      "menuId": "b56a1c36-03dd-4c71-b83f-b607db1597c5",
+      "id": "5efc2282-275a-4945-9de0-821f16c06e7a"
+    },
+    {
+      "roleId": "fe2f35ed-c9eb-416e-b5ea-e3b9c30c10e1",
+      "menuId": "b56a1c36-03dd-4c71-b83f-b607db1597c5",
+      "id": "5e48b1da-89eb-4fad-8323-24549f823ce8"
     }
   ]
 }
