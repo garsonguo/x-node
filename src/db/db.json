@@ -33,7 +33,7 @@
       "parentId": 0,
       "title": "系统",
       "name": "System",
-      "sort": 1,
+      "sort": 10,
       "lock": true,
       "icon": "ios-cube",
       "path": "",
@@ -193,6 +193,17 @@
       "expand": true,
       "id": "b56a1c36-03dd-4c71-b83f-b607db1597c5",
       "icon": "ios-home"
+    },
+    {
+      "parentId": 0,
+      "title": "地图",
+      "name": "Map",
+      "sort": 1,
+      "lock": false,
+      "icon": "ios-compass",
+      "path": "/Map",
+      "expand": true,
+      "id": "27bdccef-e427-428d-8f21-eed04caf138b"
     }
   ],
   "roleUser": [
@@ -209,84 +220,89 @@
   ],
   "access": [
     {
+      "roleId": "fe2f35ed-c9eb-416e-b5ea-e3b9c30c10e1",
+      "menuId": "b56a1c36-03dd-4c71-b83f-b607db1597c5",
+      "id": "5e48b1da-89eb-4fad-8323-24549f823ce8"
+    },
+    {
+      "roleId": "a496ca30-77fd-4bdf-8e0b-65720b0006f7",
+      "menuId": "b56a1c36-03dd-4c71-b83f-b607db1597c5",
+      "id": "d45d411f-ce8b-478f-90df-35a974bf68ee"
+    },
+    {
+      "roleId": "a496ca30-77fd-4bdf-8e0b-65720b0006f7",
+      "menuId": "27bdccef-e427-428d-8f21-eed04caf138b",
+      "id": "43ffc0b2-246d-42cc-9547-6ce2b9f022f8"
+    },
+    {
       "roleId": "a496ca30-77fd-4bdf-8e0b-65720b0006f7",
       "menuId": "1ea5a612-d309-421e-ad6a-b8ef4f520795",
-      "id": "f67f263d-e415-4faa-87b3-0b10dd186ab2"
+      "id": "0517ad71-01bb-4b04-a410-cb914c8ff64e"
     },
     {
       "roleId": "a496ca30-77fd-4bdf-8e0b-65720b0006f7",
       "menuId": "3092f266-5347-44cb-a69d-84372c6425d9",
-      "id": "19d84a80-d214-4620-9e81-cd1612445043"
+      "id": "f2ca3a17-ba9c-4cb7-a9cc-4a600a679006"
     },
     {
       "roleId": "a496ca30-77fd-4bdf-8e0b-65720b0006f7",
       "menuId": "fc7f2248-2d59-4804-a778-1265d51fda55",
-      "id": "4319143d-8a4e-45fa-8f65-d8c167052aa8"
+      "id": "16e073aa-af1f-4c15-8df9-4b2d2c5c0179"
     },
     {
       "roleId": "a496ca30-77fd-4bdf-8e0b-65720b0006f7",
       "menuId": "a2db31fb-6004-470d-883f-a79f4842bc83",
-      "id": "26720f78-3c5b-40df-b9dc-4208cfe056fc"
+      "id": "e9f28be5-9201-49c8-afd8-20b41a3aeb3e"
     },
     {
       "roleId": "a496ca30-77fd-4bdf-8e0b-65720b0006f7",
       "menuId": "35c2f180-385d-48a9-9a02-148fba5f38a9",
-      "id": "462d7bea-2516-4d07-a81f-547ad393f151"
+      "id": "f5600a06-2063-4dcf-a0fa-bc2beb90710e"
     },
     {
       "roleId": "a496ca30-77fd-4bdf-8e0b-65720b0006f7",
       "menuId": "6e2ce038-367f-4802-9a6c-cf42c584cc22",
-      "id": "801a4311-7e12-4116-b73a-28dbd8985fcd"
+      "id": "8fd67e37-ba06-41f5-8b2a-165fec39c6b6"
     },
     {
       "roleId": "a496ca30-77fd-4bdf-8e0b-65720b0006f7",
       "menuId": "4d6e4f76-98a0-4e4d-8422-dad6945db808",
-      "id": "5cec414b-163d-4e44-861e-08721d026371"
+      "id": "899ed7bf-6546-4641-9b04-c04887532138"
     },
     {
       "roleId": "a496ca30-77fd-4bdf-8e0b-65720b0006f7",
       "menuId": "c042fd07-a28f-4b78-8edb-5e771287440b",
-      "id": "bcd7aa6d-0aa2-46d4-9dad-003be7b10eb8"
+      "id": "bebce9ed-292d-4205-b77a-2667b9f37e1f"
     },
     {
       "roleId": "a496ca30-77fd-4bdf-8e0b-65720b0006f7",
       "menuId": "3efba6c6-aa02-4aa3-97b3-3e424b94305e",
-      "id": "83ebde64-c2c7-4e5d-b629-6416f590cd96"
+      "id": "2fc4cdff-8cef-4d09-a8aa-e3548902d4e3"
     },
     {
       "roleId": "a496ca30-77fd-4bdf-8e0b-65720b0006f7",
       "menuId": "a4a2283a-e98f-465f-be01-d2c7f33197b2",
-      "id": "d45cbc0b-c58f-4143-960d-d87805117bbd"
+      "id": "43453a43-2719-4855-a8a9-008c7dea9899"
     },
     {
       "roleId": "a496ca30-77fd-4bdf-8e0b-65720b0006f7",
       "menuId": "76e534ae-6275-4c9a-8288-4c6e4f5783b5",
-      "id": "6d5b41eb-6080-4b5c-9aba-d8575dc44867"
+      "id": "cb9345cb-a3bd-4f64-aeec-414e5edb6964"
     },
     {
       "roleId": "a496ca30-77fd-4bdf-8e0b-65720b0006f7",
       "menuId": "5aa5a24d-4b36-4895-9dab-17ed70a57a38",
-      "id": "3b81a8db-f0f6-49e0-bf92-b504b543de4b"
+      "id": "a8567d1f-d640-4da9-b9a5-00df322c6bf4"
     },
     {
       "roleId": "a496ca30-77fd-4bdf-8e0b-65720b0006f7",
       "menuId": "47667e7e-1013-4d44-99ef-4579b64cf0aa",
-      "id": "7837ea96-9bdc-432c-9d71-9b37a816a9d8"
+      "id": "be0a7988-4d6e-4537-a2c9-a6c903b815d0"
     },
     {
       "roleId": "a496ca30-77fd-4bdf-8e0b-65720b0006f7",
       "menuId": "9fe5250a-32a7-4612-9bde-048f64e7171c",
-      "id": "59a6963c-df5f-4871-ba2c-5966c40d1af0"
-    },
-    {
-      "roleId": "a496ca30-77fd-4bdf-8e0b-65720b0006f7",
-      "menuId": "b56a1c36-03dd-4c71-b83f-b607db1597c5",
-      "id": "5efc2282-275a-4945-9de0-821f16c06e7a"
-    },
-    {
-      "roleId": "fe2f35ed-c9eb-416e-b5ea-e3b9c30c10e1",
-      "menuId": "b56a1c36-03dd-4c71-b83f-b607db1597c5",
-      "id": "5e48b1da-89eb-4fad-8323-24549f823ce8"
+      "id": "98617859-5499-4549-a049-69c61d15917e"
     }
   ]
 }

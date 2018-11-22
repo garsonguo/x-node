@@ -74,6 +74,14 @@ module.exports = {
         })
         return result
     },
+    deleteAccess: async (roleId) => {
+        let db = await model.init('access')
+        let filter = {
+            roleId
+        }
+        let result = db.removeWhere(filter).write()
+        return result
+    },
     queryAccessList: async (id) => {
         let db = await model.init('access')
         let filter = {

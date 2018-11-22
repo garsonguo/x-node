@@ -41,6 +41,9 @@ export const addAccess = async (ctx) => {
         roleId,
         nodeIds
     } = ctx.request.body
+    let result
+    // 删除数据库中的关系数据
+    let accessDel = await roleService.deleteAccess(roleId);
     let ids = []
     nodeIds.forEach(menuId => {
         let info = {
@@ -50,6 +53,7 @@ export const addAccess = async (ctx) => {
         ids.push(info)
     });
     result = await roleService.addAccess(ids)
+
     return success(ctx, {
         result
     })
