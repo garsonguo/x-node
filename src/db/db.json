@@ -35,7 +35,7 @@
       "name": "System",
       "sort": 0,
       "lock": true,
-      "icon": "icon-fa",
+      "icon": "ios-cube",
       "path": "",
       "expand": true,
       "id": "1ea5a612-d309-421e-ad6a-b8ef4f520795"
@@ -46,7 +46,7 @@
       "name": "SystemSet",
       "sort": 0,
       "lock": true,
-      "icon": "icon-fa",
+      "icon": "ios-build",
       "path": "",
       "expand": false,
       "id": "3092f266-5347-44cb-a69d-84372c6425d9"
@@ -57,7 +57,7 @@
       "name": "AuthManage",
       "sort": 0,
       "lock": true,
-      "icon": "icon-fa",
+      "icon": "logo-buffer",
       "path": "",
       "expand": false,
       "id": "a2db31fb-6004-470d-883f-a79f4842bc83"
@@ -68,7 +68,7 @@
       "name": "OrgStructure",
       "sort": 0,
       "lock": true,
-      "icon": "icon-fa",
+      "icon": "ios-albums",
       "path": "",
       "expand": false,
       "id": "a4a2283a-e98f-465f-be01-d2c7f33197b2"
@@ -79,7 +79,7 @@
       "name": "UserManage",
       "sort": 0,
       "lock": true,
-      "icon": "icon-fa",
+      "icon": "ios-contacts",
       "path": "",
       "expand": false,
       "id": "47667e7e-1013-4d44-99ef-4579b64cf0aa"
@@ -90,7 +90,7 @@
       "name": "MenuManage",
       "sort": 0,
       "lock": false,
-      "icon": "icon-fa",
+      "icon": "md-arrow-dropright",
       "path": "/System/SystemSet/MenuManage",
       "expand": true,
       "id": "fc7f2248-2d59-4804-a778-1265d51fda55"
@@ -101,7 +101,7 @@
       "name": "Function",
       "sort": 0,
       "lock": true,
-      "icon": "icon-fa",
+      "icon": "md-arrow-dropright",
       "path": "/System/AuthManage/Function",
       "expand": false,
       "id": "35c2f180-385d-48a9-9a02-148fba5f38a9"
@@ -112,7 +112,7 @@
       "name": "Role",
       "sort": 0,
       "lock": true,
-      "icon": "icon-fa",
+      "icon": "md-arrow-dropright",
       "path": "/System/AuthManage/Role",
       "expand": false,
       "id": "6e2ce038-367f-4802-9a6c-cf42c584cc22"
@@ -123,7 +123,7 @@
       "name": "RoleAuth",
       "sort": 0,
       "lock": true,
-      "icon": "icon-fa",
+      "icon": "md-arrow-dropright",
       "path": "/System/AuthManage/RoleAuth",
       "expand": false,
       "id": "4d6e4f76-98a0-4e4d-8422-dad6945db808"
@@ -134,7 +134,7 @@
       "name": "RoleUser",
       "sort": 0,
       "lock": true,
-      "icon": "icon-fa",
+      "icon": "md-arrow-dropright",
       "path": "/System/AuthManage/RoleUser",
       "expand": false,
       "id": "c042fd07-a28f-4b78-8edb-5e771287440b"
@@ -145,7 +145,7 @@
       "name": "UserRole",
       "sort": 0,
       "lock": true,
-      "icon": "icon-fa",
+      "icon": "md-arrow-dropright",
       "path": "/System/AuthManage/UserRole",
       "expand": false,
       "id": "3efba6c6-aa02-4aa3-97b3-3e424b94305e"
@@ -156,7 +156,7 @@
       "name": "DepManage",
       "sort": 0,
       "lock": true,
-      "icon": "icon-fa",
+      "icon": "md-arrow-dropright",
       "path": "/System/OrgStructure/DepManage",
       "expand": false,
       "id": "76e534ae-6275-4c9a-8288-4c6e4f5783b5"
@@ -167,7 +167,7 @@
       "name": "PosManage",
       "sort": 0,
       "lock": true,
-      "icon": "icon-fa",
+      "icon": "md-arrow-dropright",
       "path": "/System/OrgStructure/PosManage",
       "expand": false,
       "id": "5aa5a24d-4b36-4895-9dab-17ed70a57a38"
@@ -178,7 +178,7 @@
       "name": "UserManage",
       "sort": 0,
       "lock": true,
-      "icon": "icon-fa",
+      "icon": "md-arrow-dropright",
       "path": "/System/UserManage/UserManage",
       "expand": false,
       "id": "9fe5250a-32a7-4612-9bde-048f64e7171c"
@@ -192,7 +192,7 @@
       "path": "/Home",
       "expand": true,
       "id": "b56a1c36-03dd-4c71-b83f-b607db1597c5",
-      "icon": "icon-fa"
+      "icon": "ios-home"
     }
   ],
   "roleUser": [
