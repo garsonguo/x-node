@@ -9,7 +9,7 @@ module.exports = {
     },
     queryList: async () => {
         let db = await model.init(context)
-        let list = db.value()
+        let list = db.sortBy('sort').value()
         return list
     },
     deleteFunc: async (params) => {

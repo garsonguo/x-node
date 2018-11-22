@@ -33,11 +33,11 @@
       "parentId": 0,
       "title": "系统",
       "name": "System",
-      "sort": 0,
+      "sort": 1,
       "lock": true,
       "icon": "ios-cube",
       "path": "",
-      "expand": true,
+      "expand": false,
       "id": "1ea5a612-d309-421e-ad6a-b8ef4f520795"
     },
     {
